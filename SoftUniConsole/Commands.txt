@@ -1,0 +1,6 @@
+# връзка към LocalDB и базата SoftUni
+Scaffold-DbContext -Connection "Server=(localdb)\MSSQLLocalDB;Database=SoftUni;Integrated Security=True;" 
+-Provider Microsoft.EntityFrameworkCore.SqlServer # използваме SQL Server provider 
+-OutputDir Data/Models # тук ще се генерират entity класовете (таблиците)
+-ContextDir Data # тук ще се генерира DbContext класът
+-Force # презаписва файловете ако вече съществуват
